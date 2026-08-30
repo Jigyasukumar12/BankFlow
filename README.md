@@ -91,10 +91,12 @@ npm install
 Create a `.env` file:
 
 ```
+# .env
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
+# Gmail OAuth2 (for email notifications)
 EMAIL_USER=your-email@gmail.com
 CLIENT_ID=your_google_client_id
 CLIENT_SECRET=your_google_client_secret
