@@ -13,11 +13,11 @@ A backend banking ledger service built for managing banking transactions and cor
 │  Client  │───▶│  Express │───▶│   Auth   │───▶│ MongoDB  │
 │  Login   │    │  Server  │    │Controller│    │  Lookup  │
 └──────────┘    └──────────┘    └────┬─────┘    └──────────┘
-                                     │
-                                bcrypt.compare()
-                                     │
-                                     ▼
-                          JWT issued (cookie + response body)
+      ▲                              │
+      │                         bcrypt.compare()
+      │                              │
+      │                              ▼
+      └──────────────────────────── JWT issued (cookie + response body)
 ```
 
 1. Client sends `email` + `password`.
