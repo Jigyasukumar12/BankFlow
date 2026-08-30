@@ -1,6 +1,6 @@
 # 🏦 BankFlow
 
-A backend banking ledger service built for correctness — double-entry bookkeeping, ACID-safe transfers, and JWT-based security, powered by Node.js, Express, and MongoDB.
+A backend banking ledger service built for managing banking transactions and correctness — double-entry bookkeeping, ACID-safe transfers, and JWT-based security, powered by Node.js, Express, and MongoDB.
 
 ---
 
