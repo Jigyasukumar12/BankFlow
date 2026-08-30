@@ -21,8 +21,10 @@ A backend banking ledger service built for correctness — double-entry bookkeep
 ```
 
 1. Client sends `email` + `password`.
-2. Server locates the user and compares the password using `bcrypt`.
-3. On success, a JWT is signed and returned both as a cookie and in the response body.
+2. Express server parses the JSON body.
+3. Auth Controller looks up user in MongoDB (with password field selected).
+4. Server locates the user and compares the password using `bcrypt`.
+5. On success, a JWT is signed and returned both as a cookie and in the response body.
 
 ### 2. Transfer Flow (10-Step ACID Transfer)
 
